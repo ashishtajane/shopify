@@ -88,6 +88,12 @@ GIT
       savon (~> 1.2)
       spree_core (~> 2.0.0)
 
+PATH
+  remote: ../spree_simple_sales
+  specs:
+    spree_simple_sales (2.0.3)
+      spree_core (~> 2.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -321,5 +327,6 @@ DEPENDENCIES
   spree_auth_devise!
   spree_fancy!
   spree_gateway!
+  spree_simple_sales!
   taps
   uglifier (>= 1.0.3)

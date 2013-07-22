@@ -44,3 +44,5 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'taps'
 
 gem 'spree_fancy', :git => 'https://github.com/spree/spree_fancy.git', :branch => '2-0-stable'
+
+gem 'spree_simple_sales', :path => '../spree_simple_sales'

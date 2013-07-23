@@ -1,3 +1,7 @@
+<% content_for :subheader do %>
+  <h1>Products on Sale</h1>
+<% end %>
+
 <div data-hook="homepage_products">
   <%= render 'spree/shared/products', :products => @products %>
 </div>

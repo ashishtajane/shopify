@@ -1,0 +1,53 @@
+<% content_for :subheader do %>
+  <%= render 'slider' %>
+<% end %>
+
+<div id="welcome-message">
+  <div class="container">
+    <h1>
+      Welcome to our amazing store!
+      <br>
+      Choose <a href="/products">anything</a> you wish, we’ll ship it anywhere!
+      <br>
+      See all products on sale <a href="/sale">here!</a>
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <% if @featured_products %>
+    <div id="featured-products" class="row">
+      <h3>Featured Products</h3>
+      <hr>
+      <ul class="carousel">
+        <% @featured_products.each do |product| %>
+          <%= render 'product', :product => product %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @latest_products %>
+    <div id="latest-products" class="row">
+      <h3>Latest Products</h3>
+      <hr>
+      <ul class="carousel">
+        <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
+          <%= render 'product', :product => product %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @sale_products %>
+    <div id="featured-products" class="row">
+      <h3>Products on sale</h3>
+      <hr>
+      <ul class="carousel">
+        <% @sale_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
+          <%= render 'product', :product => product %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

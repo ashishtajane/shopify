@@ -37,16 +37,11 @@ gem 'jquery-rails', '~> 3.0.0'
 # To use debugger
 # gem 'debugger'
 
-gem 'spree', '2.0.3', :git => 'https://github.com/spree/spree.git', :branch => '2-0-stable'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-0-stable'
-
+gem 'spree', :path => './vendor/gems/spree'
+gem 'spree_gateway', :path => './vendor/gems/spree_gateway'
+gem 'spree_auth_devise', :path => './vendor/gems/spree_auth_devise'
 gem 'taps'
-
-gem 'spree_fancy', :git => 'https://github.com/spree/spree_fancy.git', :branch => '2-0-stable'
-
-gem 'spree_simple_sales', :path => '../spree_simple_sales'
-
-gem 'spree_email_to_friend', :git => 'git://github.com/spree/spree_email_to_friend.git', :branch => '2-0-stable'
-
-gem 'spree_wishlist', :git => 'git://github.com/spree/spree_wishlist.git', :branch => '2-0-stable'
+gem 'spree_fancy', :path => './vendor/gems/spree_fancy'
+gem 'spree_simple_sales', :path => './vendor/gems/spree_simple_sales'
+gem 'spree_email_to_friend', :path => './vendor/gems/spree_email_to_friend'
+gem 'spree_wishlist', :path => './vendor/gems/spree_wishlist'

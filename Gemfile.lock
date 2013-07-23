@@ -106,7 +106,7 @@ GIT
       spree_core (~> 2.0.0)
 
 PATH
-  remote: ../spree_simple_sales
+  remote: ./vendor/gems/spree_simple_sales
   specs:
     spree_simple_sales (2.0.3)
       spree_core (~> 2.0.3)

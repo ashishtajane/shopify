@@ -46,3 +46,7 @@ gem 'taps'
 gem 'spree_fancy', :git => 'https://github.com/spree/spree_fancy.git', :branch => '2-0-stable'
 
 gem 'spree_simple_sales', :path => '../spree_simple_sales'
+
+gem 'spree_email_to_friend', :git => 'git://github.com/spree/spree_email_to_friend.git', :branch => '2-0-stable'
+
+gem 'spree_wishlist', :git => 'git://github.com/spree/spree_wishlist.git', :branch => '2-0-stable'

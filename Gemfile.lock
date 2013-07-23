@@ -1,4 +1,21 @@
 GIT
+  remote: git://github.com/spree/spree_email_to_friend.git
+  revision: 45b7fcc0589251e6f02eb402a922dce842e75d6b
+  branch: 2-0-stable
+  specs:
+    spree_email_to_friend (1.3)
+      recaptcha (>= 0.3.1)
+      spree_core (~> 2.0.0)
+
+GIT
+  remote: git://github.com/spree/spree_wishlist.git
+  revision: 6fd70d74f4f5fcb5076ff826be2cec8057f5dde3
+  branch: 2-0-stable
+  specs:
+    spree_wishlist (1.3)
+      spree_core (>= 2.0.0)
+
+GIT
   remote: https://github.com/spree/spree.git
   revision: 9e4cfd5753191a478d103c9b16b95bdcbc713ca5
   branch: 2-0-stable
@@ -261,6 +278,7 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     sass (3.2.9)
@@ -325,8 +343,10 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree (= 2.0.3)!
   spree_auth_devise!
+  spree_email_to_friend!
   spree_fancy!
   spree_gateway!
   spree_simple_sales!
+  spree_wishlist!
   taps
   uglifier (>= 1.0.3)

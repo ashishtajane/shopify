@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130722112251) do
+ActiveRecord::Schema.define(:version => 20130723093843) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -668,6 +668,24 @@ ActiveRecord::Schema.define(:version => 20130722112251) do
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
   add_index "spree_variants", ["sku"], :name => "index_spree_variants_on_sku"
+
+  create_table "spree_wished_products", :force => true do |t|
+    t.integer  "variant_id"
+    t.integer  "wishlist_id"
+    t.text     "remark"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "spree_wishlists", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "access_hash"
+    t.boolean  "is_private",  :default => true,  :null => false
+    t.boolean  "is_default",  :default => false, :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
 
   create_table "spree_zone_members", :force => true do |t|
     t.integer  "zoneable_id"
